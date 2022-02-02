@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)),url(img/cover.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h1{
+    width: 200px;
+    color: #fff;
+    font-size: 24px;
+}
+.nav-link{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-link ul li{
+    list-style: none;
+    display:  inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-link ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-link ul li ::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #009688;
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+}
+.nav-link ul li :hover::after{
+    width: 101%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 42px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #36f4e4;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #009688;
+    background: #009688;
+    transition: 0.6s;
+}
+
+nav .fa{
+    display: none;
+
+}
+
+.isi{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.isicol{
+    flex-basis: 31%;
+    background: #0096879c;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.isicol:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.8);
+}
+@media(max-width: 700px){
+
+    .row{
+        flex-direction: column;
+    }
+
+}
+
+/* SERVER LOCATION */
+
+
+
+
+.server{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.servercol{
+    flex-basis: 50%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.9s;
+}
+.layer:hover{
+    background: rgba(0,0,0,0.78);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.9s;
+}
+.layer:hover h3{
+    bottom: 43%;
+    opacity: 1;
+
+}
+
+
+
+
+
+
+/*INI SUSAH JAGAN RUSAKIN*/
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-link ul li{
+        display: block;
+    }
+    .nav-link{
+        position: fixed;
+        background: #009688;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1.2s;
+    }
+    nav .fa{
+        display: block;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+/*FASILITAS*/
+.fasilitas{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+.fasicol{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.fasicol img{
+    border-radius: 10px;
+
+}
+.fasicol p {
+    padding: 0;
+}
+.fasicol h3{
+    margin-bottom: 15px;
+    margin-top: 16px;
+    text-align: left;
+}
+
+
+/*kontak mak kau */
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/of.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+    .cta h1{
+    color: #009688;
+    margin-bottom: 40px;
+    padding: 0;
+}
+@media(max-width: 700){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+
+
+
+
+/*kaki*/
+.kaki{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.kaki h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icon .fa{
+    color: #36f4e4;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    
+}
+
+
+
+
+
+
+
+
+/*TENTANG KAMI PAGE*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/code.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    color: #fff;
+}
+
+
+/*KONTAK*/
+
+
+
+.loc{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.loc img{
+    width: 100%;
+}
+
+
+.kotakus{
+    width: 80%;
+    margin: auto;
+
+
+}
+
+
+
+.kontakcol{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.kontakcol div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+.kontakcol h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #009688;
+}
+
+.kontakcol input, .kontakcol textarea{
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #36f4e4;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
